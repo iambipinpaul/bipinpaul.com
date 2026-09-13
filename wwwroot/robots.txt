@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bipinpaul.com/sitemap.xml
+Sitemap: https://bipinpaul.com.np/sitemap.xml
