@@ -70,7 +70,7 @@ public static class WebsiteKeys
     public const string Tagline = ".NET, Blazor, Azure, and cloud engineering from Nepal";
     public const string BlogPostStorageAddress = $"{GitHubRepo}/tree/master/Content/Blog";
     public const string BlogLead = "Practical notes on ASP.NET Core, Blazor, Azure, and implementation patterns.";
-    public const string BlogPostUrl = "https://bipinpaul.com";
+    public const string BlogPostUrl = "https://bipinpaul.com.np";
     public const string ResumeFilePath = "/Resume/Bipin_Paul_Resume.pdf";
     public const string ResumePageUrl = $"{BlogPostUrl}/#resume";
     public const string ResumePreviewUrl = $"{BlogPostUrl}{ResumeFilePath}";
