@@ -53,9 +53,10 @@ jobs:
         run: dotnet run --project ${{ env.WEBAPP_PATH }}${{env.WEBAPP_CSPROJ}}  --configuration Release
       
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.YOUR_ACCOUNT_ID }}
-          projectName: ${{ secrets.YOUR_PROJECT_NAME }}
-          directory: ${{ secrets.YOUR_ASSET_DIRECTORY }}
+          command: pages deploy ${{ secrets.YOUR_ASSET_DIRECTORY }} --project-name=${{ secrets.YOUR_PROJECT_NAME }}
+          # Optional: creates GitHub Deployment statuses (needs deployments: write above)
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
